@@ -1,0 +1,80 @@
+@import url("base.css");
+
+/* Page settings */
+
+html {
+	background-color: black;
+}
+
+body {
+	position: relative;
+	margin: 0 auto;
+	padding: 1em;
+	width: 210mm;
+	height: 297mm;
+	background-color: white;
+}
+
+/* Page structure */
+
+html {
+	font-size: 4.5mm;
+}
+
+/* Paragraph elements */
+
+p, h1, h2, h3, h4, h5, h6, ul, ol {
+	margin: .25em 0;
+}
+
+/* Structural containers */
+
+.cross-gallery {
+	display: flex;
+	justify-content: stretch;
+	gap: .25em;
+}
+
+.cross-gallery>* {
+	flex-grow: 1;
+}
+
+.grid {
+	display: grid;
+	column-gap: .5em;
+}
+
+.grid.inline {
+	display: inline-grid;
+}
+
+.grid.kv {
+	grid-template-columns: auto 1fr;
+}
+
+/* Page-dependent styles */
+
+#tech-fall {
+	gap: .5em;
+}
+
+#tech-fall>* {
+	gap: .25em;
+}
+
+.tech-card {
+	border: 1px solid currentColor;
+	padding: .25em;
+	background-color: white;
+}
+
+.tech-card:not(.important) {
+	margin: .25em .5em;
+	font-size: .95em;
+	color: #444;
+	box-shadow: 0 1px 2px #00000022 inset;
+}
+
+.tech-card.important {
+	box-shadow: 0 1px 2px 1px #00000022;
+}

@@ -1,0 +1,68 @@
+@import url("normalize.css/normalize.css");
+
+/* General settings */
+
+*, *::before, *::after {
+	box-sizing: border-box;
+}
+
+/* Font */
+
+@font-face {
+	font-family: CJK-Normal;
+	font-style: italic;
+	src: local("Simsun");
+}
+
+@font-face {
+	font-family: CJK-Italic;
+	font-style: italic;
+	src: local("FangSong");
+}
+
+html {
+	font-family: "Times New Roman", "CJK-Normal", serif;
+}
+
+/* Inline elements */
+
+a {
+	text-decoration: underline;
+}
+
+em, i, a {
+	font-family: "Times New Roman", "CJK-Italic", serif;
+	font-style: italic;
+}
+
+u {
+	text-decoration: none;
+	font-style: italic;
+	border-bottom: 1px solid;
+	border-image: linear-gradient(currentcolor, currentcolor) 1 0 / 1 1px;
+}
+
+/* Block elements */
+
+blockquote {
+	position: relative;
+	margin: .4em 0;
+	padding: 0 1em;
+}
+
+blockquote::before {
+	content: "";
+	display: block;
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: .2em;
+	height: 100%;
+	background-color: lightgray;
+}
+
+/* Media elements */
+
+img {
+	object-fit: contain;
+}

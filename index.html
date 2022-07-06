@@ -1,0 +1,175 @@
+<!doctype html>
+<html>
+
+<head>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+	<title>王念一的简历</title>
+	<link rel="stylesheet" href="stylesheet/index.css" />
+	<link rel="stylesheet" href="waterfall/waterfall.css" />
+	<script src="waterfall/waterfall.js"></script>
+</head>
+
+<body>
+	<header>
+		<h1>王念一的简历</h1>
+	</header>
+	<main>
+		<div class="cross-gallery">
+			<div>
+				<h2>基本信息</h2>
+				<div class="grid inline kv">
+					<span>姓名</span>
+					<span>王念一</span>
+
+					<span>性别</span>
+					<span>男</span>
+					
+					<span>年龄</span>
+					<span>20</span>
+
+					<span>籍贯</span>
+					<span>北京</span>
+
+					<span>联系方式</span>
+					<span>13581642412</span>
+
+					<span>电子邮箱</span>
+					<span><a
+						href="mailto:WangNianyi2001@outlook.com"
+						style="word-break: break-all;"
+					>
+						WangNianyi2001@outlook.com
+					</a></span>
+				</div>
+			</div>
+			<div>
+				<h2>学业状态</h2>
+				<div class="grid kv">
+					<span>当前学业状态</span>
+					<span>本科二年级在读</span>
+
+					<span>在读院校</span>
+					<span>中国传媒大学</span>
+
+					<span>在读专业</span>
+					<span>数字媒体技术（游戏设计技术方向）</span>
+					
+					<span>预计毕业院校</span>
+					<span>北方工业大学（双校联合培养）</span>
+				</div>
+			</div>
+			<div style="flex-grow: unset;">
+				<img style="float: right;"
+					src="portrait.jpg"
+					height="180"
+				/>
+			</div>
+		</div>
+		<h2>技术履历</h2>
+		<waterfall-view id="tech-fall" col="2">
+			<div class="tech-card">
+				2012 年，小学五年级，因为梦想做游戏，开始学习 C++。
+			</div>
+			<div class="tech-card">
+				六年级，开始学习前端三件套（HTML、JavaScript、CSS）。
+				<em>事实上，这份简历就是用 HTML 写的。</em>
+			</div>
+			<div class="tech-card">
+				初一，开始学习 C#。
+			</div>
+			<div class="tech-card important">
+				2017 年，初三，与西南交大的朋友合作开发了一款
+				<a href="https://github.com/HackSwjtu/weapp-clawjtu">
+					微信小程序
+				</a>
+				，用于查询校园信息。
+			</div>
+			<div class="tech-card">
+				高中一直在搞静态前端，开发过一些辅助性质的类库，
+				如用于管理时间的
+				<a href="https://github.com/WangNianyi2001/time.js">
+					time.js
+				</a>
+				、用于清理字符串的
+				<a href="https://github.com/WangNianyi2001/trim.js">
+				trim.js
+				</a>
+				。
+			</div>
+			<div class="tech-card">
+				2020 年，进入中国传媒大学学习游戏开发。
+			</div>
+			<div class="tech-card important">
+				大一的游戏创作课中，担任若干次小组主程，制作了：
+				<ul>
+					<li>
+						双人纸牌策略游戏
+						<a href="https://mp.weixin.qq.com/s/tbHTms25fWBK5tdwZGyW5Q">
+							斗数
+						</a>
+						，这次主要是策划，因为不插电。
+					</li>
+					<li>
+						基于网页的
+						<a href="https://github.com/WangNianyi2001/She-Has-Been">
+							简短剧情
+						</a>
+						，漫画分镜的美术形式。
+					</li>
+					<li>
+						基于 win32 的
+						<a href="https://github.com/WangNianyi2001/Bike-Ryder">
+							休闲游戏
+						</a>
+						，模仿暴力摩托。
+					</li>
+					<li>
+						基于 win32 的
+						<a href="https://github.com/WangNianyi2001/NiVz">
+							音游
+						</a>
+						，模仿太鼓达人。
+					</li>
+				</ul>
+			</div>
+			<div class="tech-card important">
+				Win32 编程实践课中，因为忍受不了其过于古老的设计范式，便包装出来一个 OOP 范式的
+				<a href="https://github.com/WangNianyi2001/Win32GameEngine">
+					2D 游戏框架
+				</a>
+				。
+			</div>
+			<div class="tech-card">
+				搭个人网站时用 Node.js 顺手车了个
+				<a href="https://github.com/WangNianyi2001/Nodity">
+					简陋的后端框架
+				</a>。
+				后来学会用 NPM 了，就转去用现成的 Webpack 和 Vite 了。
+			</div>
+			<div class="tech-card important">
+				大二的计算机图形学课上，接触了 OpenGL，遂另起炉灶搞了个
+				<a href="https://github.com/WangNianyi2001/Crossant">
+					支持 3D 图形的框架
+				</a>（当然也支持 2D）。
+				我有意设计成接口/实现分离的范式，意图对全平台友好。
+			</div>
+			<div class="tech-card important">
+				大二的游戏创作课，
+				<a href="https://github.com/WangNianyi2001/To-Kill-a-Game-Student">
+					结课作业
+				</a>
+				用 Unity 重做了大一的漫画剧情网页游戏。
+				这次的量级可以不那么勉强地叫做游戏了。
+				这里是
+				<a href="https://www.bilibili.com/video/BV1Qa411W7Ry">
+					演示视频
+				</a>
+				。
+			</div>
+		</waterfall-view>
+		<h2>技能点</h2>
+	</main>
+</body>
+
+</html>
